@@ -5,7 +5,6 @@
 # == Parameters
 #
 #
-#
 # == Examples
 #
 #
@@ -16,9 +15,6 @@ class god::params {
 
   case $::operatingsystem {
     /(?i-mx:debian|ubuntu)/: {
-      $use_rvm           = 'true'
-      $rvm_path          = '/usr/local/rvm'
-      $rvm_gemset        = 'global'
       $god_master_erb    = 'master.god.erb'
       $god_conf_path     = '/etc/god'
       $god_master_conf   = "${god_conf_path}/master.god"
@@ -28,6 +24,7 @@ class god::params {
       $god_conf_dir_mode = '2755'
       $god_conf_mode     = '0644'
       $service_provider  = 'upstart'
+      $package_provider  = 'gem'
     }
     default: {
       fail("Unsupported platform: ${::operatingsystem}")

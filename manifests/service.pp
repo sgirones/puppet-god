@@ -10,7 +10,6 @@
 #
 # == Requires:
 #
-#   class { god::install: }
 #   class { god::master::config }
 #
 # This class file is not called directly

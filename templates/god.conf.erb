@@ -11,4 +11,4 @@ respawn
 expect fork
 
 # Start god
-exec <% if @use_rvm == 'true' %>/usr/local/rvm/bin/ruby_god<% else %>/usr/bin/god<% end %> -l /var/log/god.log -c <%= @god_master_conf %> -P /var/run/god.pid
+exec /usr/local/bin/god -l /var/log/god.log -c <%= @god_master_conf %> -P /var/run/god.pid

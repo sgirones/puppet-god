@@ -12,16 +12,6 @@
 #     App directory where Gemfile is located
 #   [*home_dir_base_path*]
 #     Home directory of the specified user 
-#   [*use_rvm*]
-#      Sets whether rvm is used. Defaults to true
-#   [*rvm_bin*]
-#     RVM install location. Defaults to /usr/local/rvm/bin/rvm
-#   [*rvm_gem_path*]
-#     RVM gem directory. Defaults to /usr/local/rvm/gems
-#   [*rvm_gemset*]
-#     RVM gemset to use. Defaults to global.
-#   [*ruby_version*]
-#     Ruby version for RVM purposes. Defaults to ruby-1.9.2-p290
 #   [*god_path*]
 #     God install directory
 #
